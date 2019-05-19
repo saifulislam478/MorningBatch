@@ -237,7 +237,7 @@ public class Login extends BaseClass {
 			
 		//	BrowserClose();
 	}
-	
+	@Test
 	public static void login_AT_004() throws IOException {
 		 LaunchBrowser();
 		 boolean result = false;	
