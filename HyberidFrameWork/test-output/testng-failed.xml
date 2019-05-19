@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]">
+  <test thread-count="5" name="Regression1(failed)">
+    <classes>
+      <class name="com.selenium.test.Login">
+        <methods>
+          <include name="login_AT_002"/>
+          <include name="login_AT_003"/>
+          <include name="browserClose"/>
+          <include name="getDataFromExcelFile"/>
+          <include name="getLocatorDataFromExcelFile"/>
+          <include name="LaunchBrowser"/>
+        </methods>
+      </class> <!-- com.selenium.test.Login -->
+    </classes>
+  </test> <!-- Regression1(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
