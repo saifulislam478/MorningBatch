@@ -30,6 +30,7 @@ import com.google.common.io.Files;
 public class BaseClass {
 	
 	public static WebDriver driver;
+	
 	public static Map<String,String> locatormap= new HashMap<String,String>();
 	public static Map<String,String> inputmap= new HashMap<String,String>();
 	

@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 import com.selenium.base.BaseClass;
 
 public class Login extends BaseClass {
-	
+	public static int i=0;
 /*static {
 		
 		try {
@@ -96,9 +96,9 @@ public class Login extends BaseClass {
 		  
 		  driver.findElement(By.xpath(locatormap.get("Home$Add_New_Customer"))).click();
 		  
-		  
+		 
 		  driver.findElement(By.xpath(locatormap.get("Customer$CustomerName_Editbox"))).
-		  sendKeys(inputmap.get("Customer$CustomerName_Editbox"));
+		  sendKeys(inputmap.get("Customer$CustomerName_Editbox")+i++);
 	  
 		  driver.findElement(By.xpath(locatormap.get("Customer$CustomerDescription_TextArea"))).
 		  sendKeys(inputmap.get("Customer$CustomerDescription_TextArea"));
@@ -162,7 +162,7 @@ public class Login extends BaseClass {
 		  
 		  
 		  driver.findElement(By.xpath(locatormap.get("Project$ProjectName_Editbox"))).
-		  sendKeys(inputmap.get("Project$ProjectName_Editbox"));
+		  sendKeys(inputmap.get("Project$ProjectName_Editbox")+i++);
 		  
 		  
 		  
@@ -239,7 +239,8 @@ public class Login extends BaseClass {
 	}
 	@Test
 	public static void login_AT_004() throws IOException {
-		 LaunchBrowser();
+		System.out.println("test case 4");
+		 //LaunchBrowser();
 		 boolean result = false;	
 		 try {
 		  
@@ -261,7 +262,7 @@ public class Login extends BaseClass {
 		  
 		  
 		  driver.findElement(By.xpath(locatormap.get("Project$ProjectName_Editbox"))).
-		  sendKeys(inputmap.get("Project$ProjectName_Editbox"));
+		  sendKeys(inputmap.get("Project$ProjectName_Editbox")+i++);
 		  
 		  
 		  
@@ -312,21 +313,21 @@ public class Login extends BaseClass {
 			
 			if (result)
 			{
-				System.out.println("Login_003 is passed");
-				writeResultsToFile("Login_003","PASS");
+				System.out.println("Login_004 is passed");
+				writeResultsToFile("Login_004","PASS");
 			}
 			else
 			{
-				captureScreenShot("login_AT_003");
-				System.out.println("Login_003 is Failed!!");
-				writeResultsToFile("Login_003","FAILED!!!");
+				captureScreenShot("login_AT_004");
+				System.out.println("Login_004 is Failed!!");
+				writeResultsToFile("Login_004","FAILED!!!");
 			}
 		 }
 			catch(Exception e)
 			{
-				captureScreenShot("login_AT_003");
-				System.out.println("Login_003 is Failed!!");
-				writeResultsToFile("Login_003","FAILED!!!");
+				captureScreenShot("login_AT_004");
+				System.out.println("Login_004 is Failed!!");
+				writeResultsToFile("Login_004","FAILED!!!");
 			}
 			
 			
