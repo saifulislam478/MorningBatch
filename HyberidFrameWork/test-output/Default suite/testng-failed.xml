@@ -5,7 +5,6 @@
     <classes>
       <class name="com.selenium.test.Login">
         <methods>
-          <include name="login_AT_001"/>
           <include name="login_AT_002"/>
           <include name="browserClose"/>
           <include name="getDataFromExcelFile"/>
